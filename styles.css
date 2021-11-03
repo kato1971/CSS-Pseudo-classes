@@ -1,40 +1,8 @@
 body {
     font-size: 16px;
 }
-nav {
-    display: block;
-    background-color: darkblue;
-}
 
-ul {
-    display: inline-block;
-    list-style: none;
-}
-
-li {
-    background-color: #7393B3;
-    float: left;
-    margin-right: 40px;
-    text-transform: uppercase;
-    padding: 10px;
-}
-
-.currentPage {
-    background-color: darkred;
-}
-
-input[type=search] {
-    border: 1px solid #eee;
-}
-input[type=search]:focus {
-    outline: none;
-    border: 2px solid aqua;
-}
-
-li:hover {
-    background-color: lightblue;
-}
-
+/*part one*/
 a {
     color: #000;
     text-decoration: none;
@@ -54,17 +22,49 @@ a {
     color: yellow;
 }
 
-input[type=text] {
-    width: 24%;
-    padding: 10px;
-    border: 1px solid #eee;
-}
-
-input[type=text]:focus {
-    width: 24%;
-    padding: 10px;
+.green:focus {
     color: green;
     font-size: 20px;
-    outline: 0nonepx;
 }
 
+/* Part Two */
+nav {
+    display:flex;
+    background-color: darkblue;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav li {
+    background-color: #7393B3;
+    margin: 0 30px ;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+nav li:hover {
+    background-color: lightblue;
+}
+
+nav li:last-child {
+    margin-right: 0;
+  }
+
+.currentPage {
+    background-color: darkred;
+}
+
+nav input:focus {
+    outline: none;
+    border: 2px solid aqua;
+}
